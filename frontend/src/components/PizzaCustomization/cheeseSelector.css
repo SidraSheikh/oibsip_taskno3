@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.cheese-selector {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease; /* Smooth scaling */
+  margin: 20px; /* Spacing around the selector */
+  backdrop-filter: blur(10px); /* Blur effect for a frosted glass look */
+}
+
+.cheese-selector h3 {
+  font-size: 24px; /* Larger font size for the heading */
+  margin-bottom: 15px;
+  color: #4CAF50; /* Green color for the title */
+  font-weight: 500;
+  text-align: center; /* Centered text */
+}
+
+.cheese-selector select {
+  width: 100%; /* Full width of the container */
+  padding: 12px; /* Padding for better touch target */
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Consistent font size */
+  color: #333; /* Text color */
+  background-color: #f9f9f9; /* Light background */
+  appearance: none; /* Remove default arrow */
+  cursor: pointer; /* Pointer cursor for dropdown */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Add a custom arrow for the dropdown */
+.cheese-selector select::after {
+  content: '▼'; /* Down arrow */
+  position: absolute; /* Absolute positioning */
+  right: 15px; /* Right alignment */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center alignment */
+  pointer-events: none; /* Prevent interaction with the arrow */
+}
+
+.cheese-selector select:focus {
+  border-color: #388e3c; /* Darker green on focus */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4); /* Highlight effect */
+  outline: none; /* Remove default outline */
+}
+
+.cheese-selector select:hover {
+  border-color: #388e3c; /* Change border color on hover */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2); /* Subtle shadow on hover */
+}

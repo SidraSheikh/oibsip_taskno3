@@ -1,0 +1,103 @@
+/* Main container styling */
+.add-to-cart {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-to-cart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+.add-to-cart h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+}
+
+/* Base price and total price styling */
+.add-to-cart p,
+.add-to-cart h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 1.2rem 0;
+  text-align: center;
+}
+
+.add-to-cart h3 {
+  font-weight: 600;
+  color: #e04848;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #e04848;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #b73737;
+  transform: scale(1.02);
+}
+
+button:active {
+  background-color: #992f2f;
+}
+
+/* Selector component styling */
+.selector-component {
+  margin-top: 1.2rem;
+  padding: 1.2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selector-component:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.selector-component label {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.selector-component select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.selector-component select:focus {
+  border-color: #e04848;
+}
